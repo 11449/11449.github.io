@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>F_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Module" transform="translate(-651.000000, -3864.000000)" fill-rule="nonzero">
+            <g id="Group-36" transform="translate(202.000000, 3850.000000)">
+                <g id="Group-55" transform="translate(445.000000, 10.000000)">
+                    <g id="F_icon" transform="translate(4.000000, 4.000000)">
+                        <path d="M28.3443467,30 C29.2586054,30 30,29.2586111 30,28.3441267 L30,1.65575685 C30,0.741156065 29.2587218,0 28.3443467,0 L1.6557697,0 C0.741161817,0 0,0.741156065 0,1.65575685 L0,28.3441267 C0,29.2584947 0.74104541,30 1.6557697,30 L28.3443467,30 Z" id="Blue_1_" fill="#3C5A99"></path>
+                        <path d="M20.438181,30 L20.438181,18.1401403 L24.270951,18.1401403 L24.844854,13.5181426 L20.438181,13.5181426 L20.438181,10.567289 C20.438181,9.22911401 20.795955,8.31719189 22.6435197,8.31719189 L25,8.3161224 L25,4.18217052 C24.5924557,4.12584383 23.1936245,4 21.5661932,4 C18.1686557,4 15.8426097,6.15396147 15.8426097,10.1095455 L15.8426097,13.5181426 L12,13.5181426 L12,18.1401403 L15.8426097,18.1401403 L15.8426097,30 L20.438181,30 Z" id="f" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

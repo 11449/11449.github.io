@@ -1,0 +1,577 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.title {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--big {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.text--grey {
+  color: rgba(255,255,255,0.6);
+}
+
+.text--green {
+  color: #2BC29B;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.hero {
+  background-image: linear-gradient(180deg, #111111 0%, rgba(0, 0, 0, 0) 64.23%),
+                    url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.hero__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+}
+
+
+.hero__logo img {
+  display: block;
+  height: 30px;
+  max-width: 100%;
+}
+
+.hero__content {
+  margin: 0 auto;
+  padding: 90px 0;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .hero__content {
+    max-width: 1200px;
+  }
+}
+
+.hero__title {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__columns {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .hero__columns {
+    flex-direction: row;
+  }
+}
+
+.hero__column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .hero__column {
+    margin-bottom: 0;
+  }
+}
+
+.hero__icon {
+  margin-bottom: 10px;
+}
+
+.data-notice-bar {
+  background-color: #C82929;
+  font-weight: 700;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.metric {}
+
+.metric__value {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.metric__label {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 75px 20px;
+}
+
+.section--grey {
+  background-color: #202124;
+}
+
+.info-box {
+  background-image: url('../img/icons/icon-info.svg');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin: 75px 20px 40px 20px;
+  padding: 60px 20px 20px;
+}
+
+@media (min-width: 992px) {
+  .info-box {
+    background-position: 20px 30px;
+    margin: 75px auto 40px auto;
+    max-width: 800px;
+    padding: 20px 20px 20px 70px;
+  }
+}
+
+/* .info-box__copy {
+
+}
+
+.section--info {
+  background-color: #fff;
+  color: #000;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+   padding: 75px 20px;
+}
+
+.section--info .section__copy:first-of-type {
+  background-image: url('../img/icons/icon-info.svg');
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: top center;
+  padding: 70px 0 0 0;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .section--info .section__copy:first-of-type {
+    background-position: top left;
+    padding: 0 0 0 70px;
+    text-align: left;
+  }
+} */
+
+.section__title {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 75px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__title--with-sub-title {
+  margin-bottom: 20px;
+}
+
+.section__title--sub {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-transform: none;
+  margin: 0 0 75px 0;
+}
+
+.section__copy {}
+
+@media (min-width: 992px) {
+  .section__copy {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+
+.section__columns {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.section__columns--margin {
+  margin-bottom: 115px;
+}
+
+@media (min-width: 992px) {
+  .section__columns {
+    flex-direction: row;
+    max-width: 1200px;
+  }
+}
+
+.section__column {
+  flex: 1;
+}
+
+.section__artist {
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  position: relative;
+}
+
+.section__artist-bubble {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+}
+
+.section__artist-bubble--foo-fighters {
+  background-image: url('../img/foo.jpeg');
+}
+
+.section__artist-bubble--killers {
+  background-image: url('../img/killers.jpeg');
+}
+
+.section__artist-bubble--kings-of-leon {
+  background-image: url('../img/kings-of-leon.jpg');
+}
+
+.section__artist-infos {
+  bottom: 0;
+  left: 30px;
+  position: absolute;
+  width: 100%;
+}
+
+.section__artist-name {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__artist-name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  height: 3px;
+  background-color:#FFEF4D;
+  width: 20px;
+  left: 0;
+}
+
+.section__artist-location {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__artist-metrics {
+  margin-top: 60px;
+}
+
+.section__artist-metrics-columns {
+  display: flex;
+}
+
+.section__artist-metrics-column {
+  flex: 1;
+}
+
+.section__artist-metrics-column--condensed {
+  flex: 0;
+}
+
+@media (min-width: 992px) {
+  .section__artist-metrics-column--condensed {
+    margin-right: 40px;
+  }
+}
+
+.section__artist-metrics-label {
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__artist-metrics-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  height: 3px;
+  background-color:#FFEF4D;
+  width: 20px;
+  left: 0;
+}
+
+.section__artist-metrics-value {
+  color: #35A8E0;
+  text-align: left;
+}
+
+.section__artist-metrics-value--negative {
+  color: #C82929;
+}
+
+.section__artist-metrics-value--positive {
+  color: #29C88E;
+}
+
+
+/* Timeline */
+
+.timeline__container {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px 0;
+}
+
+.timeline__container::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px solid #fff;
+}
+
+.timeline__marker {
+  background-color: #000;
+  margin: 20px auto;
+  padding: 20px;
+  z-index: 2;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.section--grey .timeline__marker {
+  background-color: #222;
+}
+
+.timeline__step {
+  box-shadow: 0px 1px 22px 4px rgb(0 0 0 / 7%);
+  position: relative;
+  display: block;
+  z-index: 2;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+
+  background: rgb(53,169,222);
+  background: linear-gradient(90deg, rgba(53,169,222,1) 0%, rgba(41,200,142,1) 100%);
+}
+
+
+@media (min-width: 992px) {
+  .timeline__step {
+    width: 30%;
+  }
+
+  .timeline__step:nth-child(odd) {
+    transform: translateX(calc(-50% - 100px));
+  }
+
+  .timeline__step:nth-child(even) {
+    transform: translateX(calc(50% + 100px));
+  }
+
+  .timeline__step--festival-2 {
+    margin-top: -260px
+  }
+
+  .timeline__step--festival-4 {
+    margin-top: -329px
+  }
+
+  .timeline__step--festival-5 {
+    margin-top: -30px
+  }
+}
+
+.timeline__step-inner {
+  background-color: #000;
+  margin: 3px;
+  padding: 30px;
+}
+
+.timeline__step-upper {
+  border-bottom: 1px solid #333333;
+  display: flex;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+}
+
+.timeline__step-upper-column--expand {
+  flex: 1;
+}
+
+@media (min-width: 992px) {
+  .timeline__step::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .section--grey .timeline__step::before {
+    background-color: #222;
+  }
+
+  .timeline__step:nth-child(odd)::before {
+    left: calc(100% + 84px);
+  }
+
+  .timeline__step:nth-child(even)::before {
+    left: 0;
+    margin-left: -116px;
+  }
+
+  .timeline__step-inner::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-color: transparent transparent transparent #29c88e;
+  }
+
+  .timeline__step:nth-child(odd) .timeline__step-inner::after {
+    border-left-width: 15px;
+    border-left-style: solid;
+    left: 100%;
+  }
+
+  .timeline__step:nth-child(even) .timeline__step-inner::after {
+    border-right-width: 15px;
+    border-right-style: solid;
+    right: 100%;
+    border-color: transparent #35a9de transparent transparent;
+  }
+}
+
+.timeline__step--release {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  justify-content: flex-end;
+  padding: 20px;
+  width: 210px;
+
+  background-blend-mode: multiply, normal, normal;
+  filter: drop-shadow(0px 12px 12px rgba(50, 50, 71, 0.08)) drop-shadow(0px 16px 24px rgba(50, 50, 71, 0.08));
+}
+
+.timeline__step--release-killers-1 {
+  background-image: url('../img/releases/the-killers.png'), linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7) 100%), url(image.png), url(large_uncropped_c49c8662.jpg);
+}
+
+.timeline__step--release-foo-1 {
+  background-image: url('../img/releases/foo-fighters-february.png'), linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7) 100%), url(image.png), url(large_uncropped_c49c8662.jpg);
+}
+
+.timeline__step--release-kol {
+  background-image: url('../img/releases/kings-of-leon.png'), linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7) 100%), url(image.png), url(large_uncropped_c49c8662.jpg);
+}
+
+.timeline__step--release-foo-2 {
+  background-image: url('../img/releases/foo-fighters-july.png'), linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7) 100%), url(image.png), url(large_uncropped_c49c8662.jpg);
+}
+
+.release__artist-name {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.release__artist-name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  height: 3px;
+  background-color:#FFEF4D;
+  width: 20px;
+  left: 0;
+}
+
+.artist-page {
+  min-height: 70vh;
+  width: 100%;
+}
